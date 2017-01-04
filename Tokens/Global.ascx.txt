@@ -1,0 +1,29 @@
+using SitefinityWebApp.Tokens;
+using SitefinityWebApp.Tokens.Configuration;
+using System;
+using Telerik.Sitefinity.Abstractions;
+using Telerik.Sitefinity.Configuration;
+using Telerik.Sitefinity.Data;
+using Telerik.Sitefinity.Services;
+using Telerik.Sitefinity.Services.Comments;
+using Telerik.Sitefinity.Web.Events;
+
+namespace SitefinityWebApp
+{
+    public class Global : System.Web.HttpApplication
+    {
+        public static void Start()
+        {
+            Bootstrapper.Initialized += new EventHandler<ExecutedEventArgs>(Bootstrapper_Initialized);
+        }
+
+        public static void Bootstrapper_Initialized(object sender, ExecutedEventArgs args)
+        {
+            if (args.CommandName == "Bootstrapped")
+            {
+                Config.RegisterSection<TokensConfig>();
+                EventHub.Subscribe<IPagePreRenderCompleteEvent>(TokenReplacer.OnPagePreRenderCompleteEventHandler);
+            }
+        }
+    }
+}
