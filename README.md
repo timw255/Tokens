@@ -2,7 +2,7 @@
 
 This is an example of how to support tokens in Sitefinity content.
 
-[Watch a demonstration on YouTube (1:20)](https://youtu.be/FhAAaeQznUM)
+[Watch a demonstration on YouTube (0:37)](https://youtu.be/FhAAaeQznUM)
 
 #### Installation
 
