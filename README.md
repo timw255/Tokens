@@ -2,6 +2,8 @@
 
 This is an example of how to support tokens in Sitefinity content.
 
+[Watch a demonstration on YouTube (1:20)](https://youtu.be/FhAAaeQznUM)
+
 #### Installation
 
 1. Copy the "Tokens" folder to the root of your Sitefinity project
