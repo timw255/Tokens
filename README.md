@@ -10,7 +10,7 @@ This is an example of how to support tokens in Sitefinity content.
 
 #### After installation
 
-Navigate to _(Administration -> Settings -> Advanced -> -> Tokens)_ and define some tokens.
+Navigate to _Administration -> Settings -> Advanced -> Tokens_ to define your tokens.
 
 By default, the replacer will look for tokens in the form of {{sometext}}.
 
