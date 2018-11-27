@@ -111,7 +111,7 @@ namespace SitefinityWebApp.Tokens
 
                 if (modified)
                 {
-                    buffer = Encoding.ASCII.GetBytes(output);
+                    buffer = encoding.GetBytes(output);
                 }
             }
 
